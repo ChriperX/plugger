@@ -1,6 +1,6 @@
 {
-	"name": "pluggr",
-	"version": "1.0.0",
+	"name": "@nonamenpm/plugger",
+	"version": "1.0.3",
 	"description": "Plugin library similiar to chai's",
 	"main": "pluggr.js",
 	"dependencies": {

@@ -6,7 +6,7 @@ module.exports = function(plugin = [], reference, override = false) {
 		//plugin: array of the plugins to import
 
 		for (var i = 0; i <= plugin.length - 1; i++) {
-			var plug = require(plugin[i]);
+			var plug = plugin[i];
 
 			//loop through the object that require() returns
 			for (key in plug) {
