@@ -1,5 +1,5 @@
 {
-	"name": "plugger",
+	"name": "pluggr",
 	"version": "1.0.0",
 	"description": "Plugin library similiar to chai's",
 	"main": "pluggr.js",
