@@ -1,6 +1,23 @@
 # Plugger
 Plugger is a plugin library to add plugin-compatibility to a library.
 
+# Install
+
+## Yarn
+```bash
+
+$ yarn add @nonamenpm/plugger
+
+```
+
+## Node.js
+
+```bash
+
+$ npm i @nonamenpm/plugger
+
+```
+
 # How to make a library pluggable
 
 Lets say we have a library called **my-library** and we want to make it compatible for plugins:
@@ -47,3 +64,8 @@ exports.sayHello = function(name) {
     console.log('Oh hi ' + name + '!')
 }
 ```
+
+# Tips
+
+- You can use **this** in a plugin to access a variable set by the importing library
+- In an application you can directly specify to import plugins from a specific directory
