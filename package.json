@@ -1,6 +1,6 @@
 {
 	"name": "@nonamenpm/plugger",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Plugin library similiar to chai's",
 	"main": "pluggr.js",
 	"dependencies": {
@@ -17,7 +17,9 @@
 		"type": "git",
 		"url": "git+https://github.com/ChriperX/plugger.git"
 	},
-	"keywords": [ "plugin" ],
+	"keywords": [
+		"plugin"
+	],
 	"author": "NoName",
 	"license": "ISC",
 	"bugs": {
