@@ -1,0 +1,27 @@
+{
+	"name": "plugger",
+	"version": "1.0.0",
+	"description": "Plugin library similiar to chai's",
+	"main": "plugger.js",
+	"dependencies": {
+		"lodash.merge": "^4.6.2"
+	},
+	"devDependencies": {
+		"typescript": "^3.8.3"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ChriperX/plugger.git"
+	},
+	"keywords": [ "plugin" ],
+	"author": "NoName",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ChriperX/plugger/issues"
+	},
+	"homepage": "https://github.com/ChriperX/plugger#readme"
+}
