@@ -17,9 +17,7 @@
 		"type": "git",
 		"url": "git+https://github.com/ChriperX/plugger.git"
 	},
-	"keywords": [
-		"plugin"
-	],
+	"keywords": [ "plugin", "plugin-manager", "simple", "no-setup" ],
 	"author": "NoName",
 	"license": "ISC",
 	"bugs": {
