@@ -1,16 +1,28 @@
 # Plugger
-Plugger is a plugin library to add plugin-compatibility to a library.
+Plugger is a library to add plugin-compatibility to a library.
+
+# Legend
+- [Install](#install)
+  - [yarn](#yarn)
+  - [npm](#npm)
+- [How to make a library pluggable](#how-to-make-a-library-pluggable)
+- [How to use and make plugins](#how-to-use-and-make-plugins)
+- [Tips](#tips)
+- [Examples](#examples)
+  - [Explicit import](#explicit-import)
+  - [Using the importing library's variables](#using-the-importing-library's-variables)
+- [Notes](#notes)
 
 # Install
 
-### Yarn
+### yarn
 ```bash
 
 $ yarn add @nonamenpm/plugger
 
 ```
 
-### Node.js
+### npm
 
 ```bash
 
@@ -69,11 +81,6 @@ exports.sayHello = function(name) {
 - You can use **this** in a plugin to access a variable set by the importing library.
 - In an application you can directly specify to import plugins from a specific directory.
 - To use a function of a plugin in an importing library you have to use the plugger function directly. 
-
-# Note
-
-- If there you want to override a variable, please put **true** in the third argument of plugger().
-- If there are conflicting names in the plugin and the importing library
 
 # Examples
 
@@ -140,3 +147,9 @@ myLib.use([ myPlugin ])
 
 myLib.versionNumber()
 ```
+
+# Notes
+
+- If there you want to override a variable, please put **true** in the third argument of plugger().
+- If there are conflicting names in the plugin and the importing library
+

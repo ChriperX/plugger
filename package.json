@@ -1,10 +1,11 @@
 {
 	"name": "@nonamenpm/plugger",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Plugin library similiar to chai's",
 	"main": "pluggr.js",
 	"dependencies": {
-		"lodash.merge": "^4.6.2"
+		"extend": "^3.0.2",
+		"lodash.concat": "^4.5.0"
 	},
 	"devDependencies": {
 		"typescript": "^3.8.3"
@@ -17,7 +18,12 @@
 		"type": "git",
 		"url": "git+https://github.com/ChriperX/plugger.git"
 	},
-	"keywords": [ "plugin", "plugin-manager", "simple", "no-setup" ],
+	"keywords": [
+		"plugin",
+		"plugin-manager",
+		"simple",
+		"no-setup"
+	],
 	"author": "NoName",
 	"license": "ISC",
 	"bugs": {

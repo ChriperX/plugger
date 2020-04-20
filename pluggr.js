@@ -1,4 +1,6 @@
-const merge = require('lodash.merge');
+//i decided to use extend for merging things
+const extend = require('extend');
+const concat = require('lodash.concat');
 
 module.exports = function(plugin = [], reference, override = false) {
 	try {
@@ -12,8 +14,17 @@ module.exports = function(plugin = [], reference, override = false) {
 			for (key in plug) {
 				//if there is another isnstance of the value it merges it to avoid overriding
 				if (reference[key] && !override) {
-					reference[key] = merge(reference[key], plug[key]);
+					//check if the variable is an object, so it can be merged
+					if (typeof reference[key] === 'object' && !Array.isArray(reference[key])) {
+						extend(reference[key], plug[key]);
+					} else if (Array.isArray(reference[key])) {
+						reference[key] = concat(reference[key], plug[key]);
+					} else {
+						//if it isn't an object don't so anything
+						continue;
+					}
 				} else {
+					//if override isn't set, just override the variable
 					reference[key] = plug[key];
 				}
 			}
